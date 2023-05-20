@@ -1,0 +1,21 @@
+{
+  "name": "@lucaswinningham-eslint/parser",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaswinningham/eslint-config.git",
+    "directory": "packages/parser"
+  },
+  "bugs": {
+    "url": "https://github.com/lucaswinningham/eslint-config/issues"
+  },
+  "scripts": {},
+  "peerDependencies": {
+    "eslint": "^8.40.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.59.6"
+  }
+}

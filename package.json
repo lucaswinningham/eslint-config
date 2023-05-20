@@ -1,0 +1,21 @@
+{
+  "name": "@lucaswinningham-eslint/lucaswinningham-eslint",
+  "private": true,
+  "author": "Lucas Winningham",
+  "license": "MIT",
+  "repository": "@lucaswinningham-eslint/lucaswinningham-eslint",
+  "bugs": {
+    "url": "https://github.com/lucaswinningham/eslint-config/issues"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.4"
+  }
+}

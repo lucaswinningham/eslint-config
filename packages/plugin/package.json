@@ -1,0 +1,22 @@
+{
+  "name": "@lucaswinningham-eslint/plugin",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaswinningham/eslint-config.git",
+    "directory": "packages/plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/lucaswinningham/eslint-config/issues"
+  },
+  "scripts": {},
+  "peerDependencies": {
+    "eslint": "^8.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "eslint-define-config": "^1.20.0"
+  }
+}
