@@ -1,7 +1,7 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration, type ImportRules } from '@lucaswinningham-eslint/types';
 import { off, error } from '@lucaswinningham-eslint/utils';
 
-const imports: Configuration = {
+const imports: Configuration<ImportRules> = {
   env: {
     es6: true
   },
@@ -12,7 +12,6 @@ const imports: Configuration = {
   },
   plugins: [
     'import',
-    'unused-imports',
   ],
   extends: [
     'plugin:import/recommended',
@@ -92,14 +91,6 @@ const imports: Configuration = {
     }],
     'import/prefer-default-export': off,
     // 'import/unambiguous': off,
-
-    'unused-imports/no-unused-imports': error,
-    'unused-imports/no-unused-vars': [error, {
-      vars: 'all',
-      varsIgnorePattern: '^_',
-      args: 'after-used',
-      argsIgnorePattern: '^_',
-    }],
   },
 };
 

@@ -1,7 +1,7 @@
-import { Configuration } from '@lucaswinningham-eslint/types';
+import { Configuration, type TypeScriptRules } from '@lucaswinningham-eslint/types';
 import { off, error } from '@lucaswinningham-eslint/utils';
 
-export const typescript: Configuration = {
+export const typescript: Configuration<TypeScriptRules> = {
   // parser: '@typescript-eslint/parser', // plugin:@typescript-eslint/base (from plugin:@typescript-eslint/recommended)
   // plugins: ['@typescript-eslint'], // plugin:@typescript-eslint/base (from plugin:@typescript-eslint/recommended)
   parser: '@lucaswinningham-eslint/parser',
@@ -143,8 +143,12 @@ export const typescript: Configuration = {
     // '@typescript-eslint/no-unused-expressions': off,
     // '@typescript-eslint/no-unused-vars': warn, // plugin:@typescript-eslint/recommended
 
-    // TODO: Let unused-imports/no-unused-vars handle this?
-    '@typescript-eslint/no-unused-vars': off, // ('warn' in plugin:@typescript-eslint/recommended)
+    '@typescript-eslint/no-unused-vars': [error, {
+      vars: 'all',
+      varsIgnorePattern: '^_',
+      args: 'after-used',
+      argsIgnorePattern: '^_',
+    }], // ('warn' in plugin:@typescript-eslint/recommended)
 
     // '@typescript-eslint/no-use-before-define': off,
     // '@typescript-eslint/no-useless-constructor': warn, // plugin:@typescript-eslint/strict

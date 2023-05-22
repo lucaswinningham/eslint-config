@@ -1,7 +1,7 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration, type ESLintRules } from '@lucaswinningham-eslint/types';
 import { error } from '@lucaswinningham-eslint/utils';
 
-const bestPractices: Configuration = {
+const bestPractices: Configuration<ESLintRules> = {
   rules: {
     // 'accessor-pairs': off,
     'array-callback-return': [error, {

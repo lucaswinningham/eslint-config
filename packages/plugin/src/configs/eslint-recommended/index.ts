@@ -1,6 +1,6 @@
 import { type Configuration } from '@lucaswinningham-eslint/types';
 
-export const eslintRecommended: Configuration = {
+export const eslintRecommended: Configuration<{}> = {
   extends: [
     './configs/eslint-recommended/best-practices',
     './configs/eslint-recommended/errors',

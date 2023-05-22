@@ -1,7 +1,7 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration, type ESLintRules } from '@lucaswinningham-eslint/types';
 import { off, error } from '@lucaswinningham-eslint/utils';
 
-const errors: Configuration = {
+const errors: Configuration<ESLintRules> = {
   rules: {
     'for-direction': error, // eslint-recommended
     'getter-return': error, // eslint-recommended

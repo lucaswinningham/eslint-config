@@ -1,7 +1,7 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration, type ESLintRules } from '@lucaswinningham-eslint/types';
 import { off, error } from '@lucaswinningham-eslint/utils';
 
-const es6: Configuration = {
+const es6: Configuration<ESLintRules> = {
   env: {
     es6: true
   },

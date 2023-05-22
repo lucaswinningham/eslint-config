@@ -1,7 +1,7 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration, type ESLintRules } from '@lucaswinningham-eslint/types';
 import { off, warn, error } from '@lucaswinningham-eslint/utils';
 
-const style: Configuration = {
+const style: Configuration<ESLintRules> = {
   rules: {
     'array-bracket-newline': [error, 'consistent'],
     'array-bracket-spacing': error,
