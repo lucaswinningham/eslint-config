@@ -1,28 +1,16 @@
 import { type Plugin } from '@lucaswinningham-eslint/types';
 
 import {
-  all,
-  bestPractices,
-  errors,
-  es6,
-  imports,
-  node,
-  strict,
-  style,
-  variables,
+  eslintRecommended,
+  react,
+  typescript,
 } from './configs';
 
 const plugin: Plugin = {
   configs: {
-    all,
-    'best-practices': bestPractices,
-    errors,
-    es6,
-    imports,
-    node,
-    strict,
-    style,
-    variables,
+    'eslint-recommended': eslintRecommended,
+    react,
+    typescript,
   },
 };
 

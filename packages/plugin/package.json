@@ -16,7 +16,6 @@
     "eslint": "^8.40.0"
   },
   "devDependencies": {
-    "@types/node": "^20.2.1",
     "eslint-define-config": "^1.20.0"
   }
 }

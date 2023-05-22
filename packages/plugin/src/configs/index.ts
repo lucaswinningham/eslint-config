@@ -1,9 +1,3 @@
-export { default as all } from './all';
-export { default as bestPractices } from './best-practices';
-export { default as errors } from './errors';
-export { default as es6 } from './es6';
-export { default as imports } from './imports';
-export { default as node } from './node';
-export { default as strict } from './strict';
-export { default as style } from './style';
-export { default as variables } from './variables';
+export { eslintRecommended } from './eslint-recommended';
+export { react } from './react';
+export { typescript } from './typescript';
