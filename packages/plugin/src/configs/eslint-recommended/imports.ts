@@ -6,6 +6,7 @@ const imports: Configuration = {
     es6: true
   },
   parserOptions: {
+    // ecmaFeatures: { jsx: true },
     ecmaVersion: 6,
     sourceType: 'module'
   },
@@ -23,6 +24,7 @@ const imports: Configuration = {
       typescript: true,
       node: true,
     },
+    // 'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
   },
   rules: {
     'import/consistent-type-specifier-style': [error, 'prefer-inline'],
