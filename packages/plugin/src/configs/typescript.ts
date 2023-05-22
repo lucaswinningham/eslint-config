@@ -62,9 +62,6 @@ export const typescript: Configuration = {
     // '@typescript-eslint/consistent-indexed-object-style': warn, // plugin:@typescript-eslint/strict
     // '@typescript-eslint/consistent-type-assertions': warn, // plugin:@typescript-eslint/strict
     // '@typescript-eslint/consistent-type-definitions': warn, // plugin:@typescript-eslint/strict
-    '@typescript-eslint/consistent-type-exports': [error, {
-      fixMixedExportsWithInlineTypeSpecifier: true,
-    }],
     '@typescript-eslint/consistent-type-imports': [error, {
       prefer: 'type-imports',
       fixStyle: 'inline-type-imports',
