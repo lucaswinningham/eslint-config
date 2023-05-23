@@ -1,5 +1,5 @@
-import { type Configuration, type ImportRules } from '@lucaswinningham-eslint/types';
-import { off, error } from '@lucaswinningham-eslint/utils';
+import { type Configuration, type ImportRules } from '@lucaswinningham/eslint-types';
+import { off, error } from '@lucaswinningham/eslint-utils';
 
 const imports: Configuration<ImportRules> = {
   env: {

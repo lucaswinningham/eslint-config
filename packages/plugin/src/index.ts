@@ -1,4 +1,4 @@
-import { type Plugin } from '@lucaswinningham-eslint/types';
+import { type Plugin } from '@lucaswinningham/eslint-types';
 
 import {
   eslintRecommended,

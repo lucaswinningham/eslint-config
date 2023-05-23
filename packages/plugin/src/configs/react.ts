@@ -1,5 +1,5 @@
-import { Configuration, type ReactRules } from '@lucaswinningham-eslint/types';
-import { off, error } from '@lucaswinningham-eslint/utils';
+import { Configuration, type ReactRules } from '@lucaswinningham/eslint-types';
+import { off, error } from '@lucaswinningham/eslint-utils';
 
 export const react: Configuration<ReactRules> = {
   plugins: [

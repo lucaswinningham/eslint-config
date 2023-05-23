@@ -1,5 +1,5 @@
-import { type Configuration, type ESLintRules } from '@lucaswinningham-eslint/types';
-import { error } from '@lucaswinningham-eslint/utils';
+import { type Configuration, type ESLintRules } from '@lucaswinningham/eslint-types';
+import { error } from '@lucaswinningham/eslint-utils';
 
 const bestPractices: Configuration<ESLintRules> = {
   rules: {

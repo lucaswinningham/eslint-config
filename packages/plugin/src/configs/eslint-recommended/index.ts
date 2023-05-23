@@ -1,4 +1,4 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
+import { type Configuration } from '@lucaswinningham/eslint-types';
 
 export const eslintRecommended: Configuration<{}> = {
   extends: [

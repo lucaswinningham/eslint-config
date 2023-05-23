@@ -1,10 +1,10 @@
-import { Configuration, type TypeScriptRules } from '@lucaswinningham-eslint/types';
-import { off, error } from '@lucaswinningham-eslint/utils';
+import { Configuration, type TypeScriptRules } from '@lucaswinningham/eslint-types';
+import { off, error } from '@lucaswinningham/eslint-utils';
 
 export const typescript: Configuration<TypeScriptRules> = {
   // parser: '@typescript-eslint/parser', // plugin:@typescript-eslint/base (from plugin:@typescript-eslint/recommended)
   // plugins: ['@typescript-eslint'], // plugin:@typescript-eslint/base (from plugin:@typescript-eslint/recommended)
-  parser: '@lucaswinningham-eslint/parser',
+  parser: '@lucaswinningham/eslint-parser',
   // parserOptions: { sourceType: 'module' }, // plugin:@typescript-eslint/base (from plugin:@typescript-eslint/recommended)
   plugins: [
     '@lucaswinningham-eslint',
@@ -141,7 +141,6 @@ export const typescript: Configuration<TypeScriptRules> = {
     // '@typescript-eslint/no-unsafe-member-access': error, // plugin:@typescript-eslint/recommended-requiring-type-checking
     // '@typescript-eslint/no-unsafe-return': error, // plugin:@typescript-eslint/recommended-requiring-type-checking
     // '@typescript-eslint/no-unused-expressions': off,
-    // '@typescript-eslint/no-unused-vars': warn, // plugin:@typescript-eslint/recommended
 
     '@typescript-eslint/no-unused-vars': [error, {
       vars: 'all',

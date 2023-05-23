@@ -1,9 +1,9 @@
 {
-  "name": "@lucaswinningham-eslint/lucaswinningham-eslint",
+  "name": "@lucaswinningham/eslint-lucaswinningham-eslint",
   "private": true,
   "author": "Lucas Winningham",
   "license": "MIT",
-  "repository": "@lucaswinningham-eslint/lucaswinningham-eslint",
+  "repository": "@lucaswinningham/eslint-lucaswinningham-eslint",
   "bugs": {
     "url": "https://github.com/lucaswinningham/eslint-config/issues"
   },

@@ -1,5 +1,5 @@
-import { type Configuration } from '@lucaswinningham-eslint/types';
-import { off, error } from '@lucaswinningham-eslint/utils';
+import { type Configuration } from '@lucaswinningham/eslint-types';
+import { off, error } from '@lucaswinningham/eslint-utils';
 
 const promise: Configuration = {
   plugins: [
