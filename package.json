@@ -13,9 +13,20 @@
     ]
   },
   "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "tsc -b tsconfig.build.json --clean",
+    "pack": 
+  },
+  "engines": {
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
+    "@babel/parser": "^7.22.0",
+    "@babel/types": "^7.22.0",
     "eslint": "^8.40.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

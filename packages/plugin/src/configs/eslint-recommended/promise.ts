@@ -1,19 +1,13 @@
-import { type Configuration } from '@lucaswinningham/eslint-types';
+import { type Configuration, type PromiseRules } from '@lucaswinningham/eslint-types';
 import { off, error } from '@lucaswinningham/eslint-utils';
 
-const promise: Configuration = {
+const promise: Configuration<PromiseRules> = {
   plugins: [
     'promise',
   ],
   extends: [
     'plugin:promise/recommended',
   ],
-  settings: {
-    'import/resolver': {
-      typescript: true,
-      node: true,
-    },
-  },
   rules: {
     // 'promise/always-return': error, // plugin:promise/recommended
     // 'promise/avoid-new': off, // plugin:promise/recommended

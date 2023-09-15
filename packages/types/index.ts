@@ -8,7 +8,12 @@ import { type TypeScriptRules as PurelyTypeScriptRules } from 'eslint-define-con
 
 export type Configuration<Rules> = Omit<TSESLint.Linter.Config, 'rules'> & { rules: Rules };
 export type Extensions = string | string[];
-export type Plugin = TSESLint.Linter.Plugin;
+
+type PluginMeta = {
+  name: string;
+  version: string;
+};
+export type Plugin = TSESLint.Linter.Plugin & { meta: PluginMeta };
 
 export type ESLintRules = Partial<PurelyESLintRules>;
 export type ImportRules = Partial<PurelyImportRules>;

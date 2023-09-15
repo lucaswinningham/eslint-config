@@ -3,15 +3,11 @@ import { off, error } from '@lucaswinningham/eslint-utils';
 
 const es6: Configuration<ESLintRules> = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
-    ecmaFeatures: {
-      generators: false,
-      objectLiteralDuplicateProperties: false
-    }
   },
   rules: {
     // TODO: enable requireReturnForObjectLiteral?

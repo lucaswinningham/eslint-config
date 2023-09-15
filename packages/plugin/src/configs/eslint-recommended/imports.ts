@@ -3,12 +3,12 @@ import { off, error } from '@lucaswinningham/eslint-utils';
 
 const imports: Configuration<ImportRules> = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
-    // ecmaFeatures: { jsx: true },
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
+    // ecmaFeatures: { jsx: true },
   },
   plugins: [
     'import',
